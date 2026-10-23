@@ -1,0 +1,43 @@
+# JavaScript dependencies and generated bundles
+node_modules/
+coverage/
+dist/
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local secrets and machine configuration
+.env
+.env.*
+!.env.example
+android/local.properties
+*.jks
+*.keystore
+*.p12
+*.pem
+
+# Android / Gradle build outputs
+android/.gradle/
+android/build/
+android/app/build/
+
+# Local reports and generated release artifacts
+test-reports/
+work/
+artwork/masters/
+*.log
+
+# Windows build outputs (source files under windows/ remain tracked)
+windows/PySlate/
+windows/PySlate-*.exe
+windows/PySlate-*.zip
+windows/SHA256SUMS.txt
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
