@@ -1,0 +1,11 @@
+/* Decode all 174 shipped learning images through the real local application. */
+const {chromium}=require('playwright');const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),crypto=require('node:crypto');
+const url=process.argv[2],out=path.resolve(process.argv[3]),root=path.resolve(__dirname,'..');fs.mkdirSync(out,{recursive:true});
+(async()=>{let browser;const results=[],issues=[];try{
+ browser=await chromium.launch({channel:'msedge',headless:true});const page=await browser.newPage({viewport:{width:1180,height:820}});await page.goto(url);await page.locator('.chapters').waitFor();
+ const units=await page.evaluate(()=>S.lessonList.flatMap(l=>l.tiers.map(t=>({topic:l.id,tier:t.id,title:t.title,image:t.diagram,alt:t.visual.alt}))));assert.equal(units.length,174);
+ const hashes=new Set();for(const u of units){const data=fs.readFileSync(path.join(root,'web',u.image)),hash=crypto.createHash('sha256').update(data).digest('hex');assert.ok(!hashes.has(hash),'Repeated asset '+u.image);hashes.add(hash);
+  await page.evaluate(u=>openLesson(u.topic,u.tier),u);const img=page.locator('.teaching-figure img');assert.equal(await img.count(),1);await img.scrollIntoViewIfNeeded();await page.waitForFunction(()=>{const i=document.querySelector('.teaching-figure img');return i.complete&&i.naturalWidth>0;});assert.equal(await img.getAttribute('src'),u.image);assert.equal(await img.getAttribute('alt'),u.alt);results.push({...u,sha256:hash,...await img.evaluate(i=>({width:i.naturalWidth,height:i.naturalHeight,loaded:true}))});
+ }
+ await page.setViewportSize({width:390,height:844});await page.locator('.teaching-figure img').click();assert.equal(await page.locator('#dialog').isVisible(),true);assert.ok(await page.locator('.diagram-viewport').evaluate(e=>e.scrollWidth>e.clientWidth));await page.screenshot({path:path.join(out,'v020-phone-diagram-zoom.png')});await page.locator('[data-close-figure]').click();await page.screenshot({path:path.join(out,'v020-phone-advanced.png')});
+ }catch(e){issues.push(String(e.stack));console.error(e);process.exitCode=1;}finally{fs.writeFileSync(path.join(out,'diagrams-v2.json'),JSON.stringify({units:results.length,loaded:results.filter(r=>r.loaded).length,issues,passed:results.length===174&&!issues.length,results},null,2));if(browser)await browser.close();}})();

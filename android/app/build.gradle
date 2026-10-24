@@ -1,0 +1,40 @@
+plugins {
+    id 'com.android.application'
+    id 'com.chaquo.python'
+}
+android {
+    namespace 'org.pyslate.app'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'org.pyslate.app'
+        minSdk 26
+        targetSdk 35
+        versionCode 3
+        versionName '0.3.0'
+        testInstrumentationRunner project.findProperty('pyslateTestRunner') ?: 'org.pyslate.app.SmokeInstrumentation'
+        ndk { abiFilters 'arm64-v8a', 'x86_64' }
+    }
+    sourceSets { main { assets.srcDirs = ['build/generated/assets'] } }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+chaquopy {
+    defaultConfig {
+        version = '3.14'
+        def hostPython = System.getenv('PYSLATE_BUILD_PYTHON')
+        if (hostPython) buildPython(hostPython)
+        pyc { src = false }
+    }
+}
+tasks.register('syncSharedAssets', Sync) {
+    into 'build/generated/assets'
+    from('../../web') { into 'web' }
+    from('../../course') {
+        into 'course'
+        exclude '**/__pycache__/**', '**/*.pyc', '**/*.pyo'
+    }
+    from('../../licenses') { into 'licenses' }
+}
+tasks.named('preBuild').configure { dependsOn 'syncSharedAssets' }

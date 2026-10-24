@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; img-src 'self' data: blob:; font-src 'self'; object-src 'none'; base-uri 'none'">
+  <title>PySlate · 让想法在此运行</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="design.css">
+  <script src="vendor.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+<div id="app"><div class="loading"><span class="brand-mark">P<span>_</span></span><p>正在打开你的编程笔记本…</p></div></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="dialog"></dialog>
+<input type="file" id="zip-input" accept=".zip,application/zip" hidden>
+</body>
+</html>

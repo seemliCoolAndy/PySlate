@@ -1,0 +1,382 @@
+[
+  {
+    "name": "@codemirror/autocomplete",
+    "version": "6.20.4",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/codemirror/autocomplete.git"
+    },
+    "licenseFiles": [
+      "codemirror__autocomplete/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "@codemirror/commands",
+    "version": "6.11.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/codemirror/commands.git"
+    },
+    "licenseFiles": [
+      "codemirror__commands/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "@codemirror/lang-python",
+    "version": "6.2.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/codemirror/lang-python.git"
+    },
+    "licenseFiles": [
+      "codemirror__lang-python/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "@codemirror/language",
+    "version": "6.13.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/codemirror/language.git"
+    },
+    "licenseFiles": [
+      "codemirror__language/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "@codemirror/lint",
+    "version": "6.9.7",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/codemirror/lint.git"
+    },
+    "licenseFiles": [
+      "codemirror__lint/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "@codemirror/search",
+    "version": "6.7.2",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/codemirror/search.git"
+    },
+    "licenseFiles": [
+      "codemirror__search/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "@codemirror/state",
+    "version": "6.7.6",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/codemirror/state.git"
+    },
+    "licenseFiles": [
+      "codemirror__state/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "@codemirror/streamparser",
+    "version": "6.0.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/codemirror/streamparser.git"
+    },
+    "licenseFiles": [
+      "codemirror__streamparser/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "@codemirror/theme-one-dark",
+    "version": "6.1.3",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/codemirror/theme-one-dark.git"
+    },
+    "licenseFiles": [
+      "codemirror__theme-one-dark/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "@codemirror/view",
+    "version": "6.43.15",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/codemirror/view.git"
+    },
+    "licenseFiles": [
+      "codemirror__view/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "@esbuild/win32-x64",
+    "version": "0.25.12",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/evanw/esbuild.git"
+    },
+    "licenseFiles": [
+      "esbuild__win32-x64/LICENSE.md"
+    ],
+    "role": "build-only"
+  },
+  {
+    "name": "@img/colour",
+    "version": "1.1.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/lovell/colour.git"
+    },
+    "licenseFiles": [
+      "img__colour/LICENSE.md"
+    ],
+    "role": "build-only"
+  },
+  {
+    "name": "@img/sharp-win32-x64",
+    "version": "0.35.5",
+    "license": "Apache-2.0 AND LGPL-3.0-or-later",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/lovell/sharp.git",
+      "directory": "npm/win32-x64"
+    },
+    "licenseFiles": [
+      "img__sharp-win32-x64/LICENSE"
+    ],
+    "role": "build-only"
+  },
+  {
+    "name": "@lezer/common",
+    "version": "1.5.3",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/lezer/common.git"
+    },
+    "licenseFiles": [
+      "lezer__common/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "@lezer/highlight",
+    "version": "1.2.5",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/lezer/highlight.git"
+    },
+    "licenseFiles": [
+      "lezer__highlight/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "@lezer/lr",
+    "version": "1.4.11",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/lezer/lr.git"
+    },
+    "licenseFiles": [
+      "lezer__lr/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "@lezer/python",
+    "version": "1.1.19",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/lezer/python.git"
+    },
+    "licenseFiles": [
+      "lezer__python/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "@marijn/find-cluster-break",
+    "version": "1.0.4",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/marijn/find-cluster-break.git"
+    },
+    "licenseFiles": [
+      "marijn__find-cluster-break/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "@types/trusted-types",
+    "version": "2.0.7",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "directory": "types/trusted-types"
+    },
+    "licenseFiles": [
+      "types__trusted-types/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "codemirror",
+    "version": "6.0.2",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/codemirror/basic-setup.git"
+    },
+    "licenseFiles": [
+      "codemirror/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "crelt",
+    "version": "1.0.7",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/marijn/crelt.git"
+    },
+    "licenseFiles": [
+      "crelt/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "detect-libc",
+    "version": "2.1.2",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/lovell/detect-libc.git"
+    },
+    "licenseFiles": [
+      "detect-libc/LICENSE"
+    ],
+    "role": "build-only"
+  },
+  {
+    "name": "dompurify",
+    "version": "3.4.17",
+    "license": "(MPL-2.0 OR Apache-2.0)",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/cure53/DOMPurify.git"
+    },
+    "licenseFiles": [
+      "dompurify/LICENSE",
+      "dompurify/LICENSE-MPL"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "esbuild",
+    "version": "0.25.12",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/evanw/esbuild.git"
+    },
+    "licenseFiles": [
+      "esbuild/LICENSE.md"
+    ],
+    "role": "build-only"
+  },
+  {
+    "name": "marked",
+    "version": "18.1.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/markedjs/marked.git"
+    },
+    "licenseFiles": [
+      "marked/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "semver",
+    "version": "7.8.5",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/npm/node-semver.git"
+    },
+    "licenseFiles": [
+      "semver/LICENSE"
+    ],
+    "role": "build-only"
+  },
+  {
+    "name": "sharp",
+    "version": "0.35.5",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/lovell/sharp.git"
+    },
+    "licenseFiles": [
+      "sharp/LICENSE"
+    ],
+    "role": "build-only"
+  },
+  {
+    "name": "style-mod",
+    "version": "4.1.4",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://code.haverbeke.berlin/marijn/style-mod.git"
+    },
+    "licenseFiles": [
+      "style-mod/LICENSE"
+    ],
+    "role": "bundled-web"
+  },
+  {
+    "name": "w3c-keyname",
+    "version": "2.2.8",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/marijnh/w3c-keyname.git"
+    },
+    "licenseFiles": [
+      "w3c-keyname/LICENSE"
+    ],
+    "role": "bundled-web"
+  }
+]
